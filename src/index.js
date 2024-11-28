@@ -1,4 +1,6 @@
 import "./style.css";
-import { greeting } from "./greeting.js";
+import { home } from "./initial_page_load.js";
 
-console.log(greeting);
+const contentDiv = document.querySelector("#content")
+
+contentDiv.appendChild(home())
