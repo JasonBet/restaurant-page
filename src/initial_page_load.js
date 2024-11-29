@@ -2,6 +2,7 @@
 export function home() {
     // Module will return this one container that has all elements appended to it
     const homeContainer = document.createElement("div");
+    homeContainer.classList.add("main-container");
 
     const name = document.createElement("h1");
     name.textContent = "CRUNCHY CRISPY CHICKEN";
