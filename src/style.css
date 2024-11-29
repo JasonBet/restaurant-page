@@ -38,6 +38,13 @@ header {
   padding: 20px;
 }
 
+nav {
+  box-sizing: border-box;
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+
 h1 {
   font-size: 2rem;
   font-weight: bold;
