@@ -7,10 +7,12 @@ export function home() {
     const name = document.createElement("h1");
     name.textContent = "CRUNCHY CRISPY CHICKEN";
     
+    const introDiv = document.createElement("div");
     const intro = document.createElement("p");
     intro.textContent = "Come on o'er and try the CRUNCHIEST, CRISPIEST, CHICKENIEST Chicken " +
         "you've ever had!";
-
+    introDiv.appendChild(intro);
+    
     const hoursDiv = document.createElement("div");
     const hoursHead = document.createElement("h2");
     hoursHead.textContent = "Hours";
@@ -55,7 +57,7 @@ export function home() {
     
 
     homeContainer.appendChild(name);
-    homeContainer.appendChild(intro);
+    homeContainer.appendChild(introDiv);
     homeContainer.appendChild(hoursDiv);
     homeContainer.appendChild(locationDiv);
 
