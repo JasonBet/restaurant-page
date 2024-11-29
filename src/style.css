@@ -51,14 +51,29 @@ h2 {
 .main-container {
   box-sizing: border-box;
   width: 50vw;
-  background-color: red;
+  background-color: #C96619;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
 }
 
+.main-container > * {
+  box-sizing: border-box;
+  background-color: #fdf5e6;
+  color: #ffa22e;
+  border: 14px solid white;
+  padding: 80px;
+}
+
 .main-container > div {
   box-sizing: border-box;
-  width: 300px;
+  width: 400px;
+  border-radius: 0% 100% 0% 100% / 50% 50% 50% 50%;
+  
+}
+
+.heading {
+  padding: 32px;
+  margin: 32px 64px;
 }

@@ -5,6 +5,7 @@ export function home() {
     homeContainer.classList.add("main-container");
 
     const name = document.createElement("h1");
+    name.classList.add("heading");
     name.textContent = "CRUNCHY CRISPY CHICKEN";
     
     const introDiv = document.createElement("div");
