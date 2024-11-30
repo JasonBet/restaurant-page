@@ -25,7 +25,12 @@ img {
 
 /*END OF CSS NORMALIZE*/
 
+html {
+  overflow-y: scroll; /*To prevent page shifts due to scroll bar changing body width*/
+}
+
 body {
+  box-sizing: border-box;
   background-color: green;
   display: flex;
   flex-direction: column;
@@ -55,9 +60,15 @@ h2 {
   font-weight: bold;
 }
 
+h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
 .main-container {
   box-sizing: border-box;
   width: 50vw;
+  padding: 20px;
   background-color: #C96619;
   display: flex;
   flex-direction: column;
@@ -83,4 +94,28 @@ h2 {
 .heading {
   padding: 32px;
   margin: 32px 64px;
+}
+
+.menu-divs {
+  text-align: center;
+}
+
+.price {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.img-placeholder {
+  width: 140px;
+  height: 140px;
+  background-color: #fdf5e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid #C96619;
+}
+
+.price-and-pic {
+  display: flex;
+  justify-content: space-between;
 }
