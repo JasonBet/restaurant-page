@@ -64,14 +64,42 @@ export function menu() {
     app2Div.appendChild(app2PriceAndImgDiv);
     
 
+    const mainsDiv = document.createElement("div");
+    mainsDiv.classList.add("menu-divs"); // Specific class to align sub-headings for menu
+    const mainsHead = document.createElement("h2");
+    mainsHead.textContent = "Mains";
+    mainsDiv.appendChild(mainsHead);
 
+    // Mains
+    const main1Div = document.createElement("div");
+    const main1Name = document.createElement("h3");
+    main1Name.textContent = "Thighs 'n Fries";
+    const main1Info = document.createElement("p");
+    main1Info.textContent = "Classic crispy fried thighs with a large side of fries";
+    const main1PriceAndImgDiv = document.createElement("div"); // allow price and img to stay inline
+    main1PriceAndImgDiv.classList.add("price-and-pic");
+    const main1Price = document.createElement("p");
+    main1Price.classList.add("price");
+    main1Price.textContent = "$16";
+    const main1PhotoPlaceholder = document.createElement("div");
+    main1PhotoPlaceholder.classList.add("img-placeholder");
+    const main1PlaceholderText = document.createElement("p");
+    main1PlaceholderText.textContent = "IMG";
+    main1PhotoPlaceholder.appendChild(main1PlaceholderText);
+    
+    main1PriceAndImgDiv.appendChild(main1Price);
+    main1PriceAndImgDiv.appendChild(main1PhotoPlaceholder);
 
-
+    main1Div.appendChild(main1Name);
+    main1Div.appendChild(main1Info);
+    main1Div.appendChild(main1PriceAndImgDiv);
 
     menuContainer.appendChild(heading);
     menuContainer.appendChild(appsDiv);
     menuContainer.appendChild(app1Div);
     menuContainer.appendChild(app2Div);
+    menuContainer.appendChild(mainsDiv);
+    menuContainer.appendChild(main1Div);
 
     return menuContainer;
 }
