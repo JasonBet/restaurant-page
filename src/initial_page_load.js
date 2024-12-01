@@ -51,7 +51,7 @@ export function home() {
     const locationHead = document.createElement("h2");
     const locationAddress = document.createElement("p");
     locationHead.textContent = "Location";
-    locationAddress.textContent = "123 Fake Road, Pretend Town, CA";
+    locationAddress.textContent = "123 Fake Road, Pretend Town, CA 99999";
 
     locationDiv.appendChild(locationHead);
     locationDiv.appendChild(locationAddress);
