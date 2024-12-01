@@ -43,7 +43,7 @@ export function menu() {
     app2Name.textContent = "Chicken Tacos";
     const app2Info = document.createElement("p");
     app2Info.textContent = "10 grilled chicken tacos with onion, tomato, and cheese. "
-        + "salsa: Pico De Gallo, Medium, Habanera Hot";
+        + "Salsa: Pico De Gallo, Medium, Habanera Hot";
     const app2PriceAndImgDiv = document.createElement("div"); // allow price and img to stay inline
     app2PriceAndImgDiv.classList.add("price-and-pic");
     const app2Price = document.createElement("p");
@@ -100,7 +100,7 @@ export function menu() {
     main2Name.textContent = "Crazy Chicken Sandwich";
     const main2Info = document.createElement("p");
     main2Info.textContent = "Super crunchy chicken sandwich with lettuce, tomato, onions, and "
-        + "our super secret sauce. Comes with fries.";
+        + "our super secret sauce. Comes with fries";
     const main2PriceAndImgDiv = document.createElement("div"); // allow price and img to stay inline
     main2PriceAndImgDiv.classList.add("price-and-pic");
     const main2Price = document.createElement("p");
@@ -119,6 +119,62 @@ export function menu() {
     main2Div.appendChild(main2Info);
     main2Div.appendChild(main2PriceAndImgDiv);
 
+
+    const dessertsDiv = document.createElement("div");
+    dessertsDiv.classList.add("menu-divs"); // Specific class to align sub-headings for menu
+    const dessertsHead = document.createElement("h2");
+    dessertsHead.textContent = "Desserts";
+    dessertsDiv.appendChild(dessertsHead);
+
+    // Desserts
+    const dessert1Div = document.createElement("div");
+    const dessert1Name = document.createElement("h3");
+    dessert1Name.textContent = "Eggnog Cupcakes with Chicken Flakes";
+    const dessert1Info = document.createElement("p");
+    dessert1Info.textContent = "4 Sweet 'n custardy eggnog cupcakes with crunchy chicken flakes";
+    const dessert1PriceAndImgDiv = document.createElement("div"); // allow price and img to stay inline
+    dessert1PriceAndImgDiv.classList.add("price-and-pic");
+    const dessert1Price = document.createElement("p");
+    dessert1Price.classList.add("price");
+    dessert1Price.textContent = "$10";
+    const dessert1PhotoPlaceholder = document.createElement("div");
+    dessert1PhotoPlaceholder.classList.add("img-placeholder");
+    const dessert1PlaceholderText = document.createElement("p");
+    dessert1PlaceholderText.textContent = "IMG";
+    dessert1PhotoPlaceholder.appendChild(dessert1PlaceholderText);
+    
+    dessert1PriceAndImgDiv.appendChild(dessert1Price);
+    dessert1PriceAndImgDiv.appendChild(dessert1PhotoPlaceholder);
+
+    dessert1Div.appendChild(dessert1Name);
+    dessert1Div.appendChild(dessert1Info);
+    dessert1Div.appendChild(dessert1PriceAndImgDiv);
+
+
+    const dessert2Div = document.createElement("div");
+    const dessert2Name = document.createElement("h3");
+    dessert2Name.textContent = "Eggnado";
+    const dessert2Info = document.createElement("p");
+    dessert2Info.textContent = "Slice of our 3 layer cake with dangerously delicious and sweet "
+        + "egg white tornados";
+    const dessert2PriceAndImgDiv = document.createElement("div"); // allow price and img to stay inline
+    dessert2PriceAndImgDiv.classList.add("price-and-pic");
+    const dessert2Price = document.createElement("p");
+    dessert2Price.classList.add("price");
+    dessert2Price.textContent = "$13";
+    const dessert2PhotoPlaceholder = document.createElement("div");
+    dessert2PhotoPlaceholder.classList.add("img-placeholder");
+    const dessert2PlaceholderText = document.createElement("p");
+    dessert2PlaceholderText.textContent = "IMG";
+    dessert2PhotoPlaceholder.appendChild(dessert2PlaceholderText);
+    
+    dessert2PriceAndImgDiv.appendChild(dessert2Price);
+    dessert2PriceAndImgDiv.appendChild(dessert2PhotoPlaceholder);
+
+    dessert2Div.appendChild(dessert2Name);
+    dessert2Div.appendChild(dessert2Info);
+    dessert2Div.appendChild(dessert2PriceAndImgDiv);
+
     menuContainer.appendChild(heading);
     menuContainer.appendChild(appsDiv);
     menuContainer.appendChild(app1Div);
@@ -126,6 +182,9 @@ export function menu() {
     menuContainer.appendChild(mainsDiv);
     menuContainer.appendChild(main1Div);
     menuContainer.appendChild(main2Div);
+    menuContainer.appendChild(dessertsDiv);
+    menuContainer.appendChild(dessert1Div);
+    menuContainer.appendChild(dessert2Div);
 
     return menuContainer;
 }
